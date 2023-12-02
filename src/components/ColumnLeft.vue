@@ -1,29 +1,51 @@
 <template>
   <div class="icon-wrapper">
     <i
-      v-for="(iconClass, iconName) in iconManager"
+      v-for="(iconClass, iconName) in selectedIcons"
       :key="iconName"
       :class="[iconClass, { 'special-icon': iconName === selectedIcon }]"
       @click="selectIcon(iconName)"
-      :style="{ backgroundColor: iconName === selectedIcon ? '#4436FD' : 'transparent' }"
+      :style="{ backgroundColor: iconName === selectedIcon ? '#4436FD' : '#ffffff' }"
     ></i>
   </div>
 </template>
 
 <script>
-import { IconManager } from '@/utils/iconManager.js'; 
+import { IconManager } from '@/utils/iconManager.js';
 
 export default {
   data() {
+    const {
+      dashBoard,
+      more,
+      add,
+      outbound,
+      loop,
+      analytics,
+      school,
+      leaderboard,
+      addChart,
+    } = IconManager;
+
     return {
-      selectedIcon: '', 
-      iconManager: IconManager,
+      selectedIcon: '',
+      selectedIcons: {
+        dashBoard,
+        more,
+        add,
+        outbound,
+        loop,
+        analytics,
+        school,
+        leaderboard,
+        addChart,
+      },
     };
   },
   methods: {
     selectIcon(iconName) {
       this.selectedIcon = iconName === this.selectedIcon ? '' : iconName;
-    }
+    },
   },
 };
 </script>
@@ -35,19 +57,21 @@ export default {
   align-items: center;
   text-align: center;
   padding: 5px;
+  background-color: #ffffff;
 }
 
 .special-icon {
-  color: #ffffff; 
-  background: #4436FD; 
+  color: #ffffff;
+  background: #4436FD;
 }
 
 .icon-wrapper i {
   width: 45px;
   height: 42px;
-  background: white;
+  background: #ffffff;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   padding: 10px;
+  margin-bottom: 10px;
 }
 </style>

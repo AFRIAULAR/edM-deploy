@@ -8,5 +8,11 @@ export const IconManager = {
   school: 'fas fa-school',
   leaderboard: 'fas fa-trophy',
   addChart: 'fas fa-chart-line',
-  accountTree: 'fas fa-sitemap'
+  accountTree: 'fas fa-sitemap',
+  pencil: 'fas fa-pencil-alt',
+  chatDots: 'fas fa-comment-dots',
+  calendar3: 'far fa-calendar-alt',
+  envelope: 'fas fa-envelope',
+  telephone: 'fas fa-phone',
+  threeDots: 'fas fa-ellipsis-h'
 };

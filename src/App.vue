@@ -2,7 +2,6 @@
   <div id="app">
     <Navbar />
     <Main/>
-   
   </div>
 </template>
 
@@ -12,7 +11,8 @@ import Main from './components/Main.vue';
 export default {
   components: {
     Navbar,
-    Main
+    Main, 
+  
   }
 }
 </script>

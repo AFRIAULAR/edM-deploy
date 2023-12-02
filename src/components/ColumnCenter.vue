@@ -1,14 +1,15 @@
 <template>
   <div>
-    <h3>Columna Central</h3>
-    <p>Contenido de la columna central</p>
+    <StudentDetails />
   </div>
 </template>
 
 <script>
+import StudentDetails from '@/components/StudentDetails.vue';
+
 export default {
+  components: {
+    StudentDetails,
+  },
 };
 </script>
-
-<style scoped>
-</style>
