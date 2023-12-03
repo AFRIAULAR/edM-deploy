@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import studentInfo from '@/data/studentInfo.json'
+import studentInfo from '../../data/studentInfo.json'
 
 export default {
   data() {

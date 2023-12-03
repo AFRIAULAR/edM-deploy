@@ -5,7 +5,7 @@
         <img
           class="rounded-circle"
           style="width: 65px; height: 65px;"
-          src="../assets/img/student-img.png"
+          src="../../assets/img/student-img.png"
           alt="Student Image"
         />
         <div class="d-flex flex-column">
@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { IconManager } from '@/utils/iconManager.js';
+import { IconManager } from '../../utils/iconManager.js';
 
 export default {
   name: 'StudentDetails',

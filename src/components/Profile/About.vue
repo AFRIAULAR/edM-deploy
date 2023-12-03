@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import aboutInfo from "../data/aboutInfo.json"; 
+import aboutInfo from "../../data/aboutInfo.json"; 
 
 export default {
   data() {

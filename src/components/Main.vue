@@ -2,28 +2,28 @@
   <div class="container-fluid" style="margin-top: 65px;">
     <div class="row">
       <div class="col-1 p-2" style="background-color: #f8f9fa;">
-        <ColumnLeft /> 
+        <DropdownMenu /> 
       </div>
       <div class="col-4 p-3" style="background-color: #e9ecef; width: 360px;">
-        <ColumnCenter /> 
+        <Profile /> 
       </div>
       <div class="col-7 p-4" style="background-color: #ced4da;">
-        <ColumnRight /> 
+        <RecordDetails /> 
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import ColumnLeft from './ColumnLeft.vue'; 
-import ColumnCenter from './ColumnCenter.vue'; 
-import ColumnRight from './columnRight.vue'; 
+import DropdownMenu from '../components/Menu/DropdownMenu.vue'; 
+import Profile from '../components/Profile/Profile.vue'; 
+import RecordDetails from '../components/Details/RecordDetails.vue'; 
 
 export default {
   components: {
-    ColumnLeft, 
-    ColumnCenter, 
-    ColumnRight,
+    DropdownMenu, 
+    Profile, 
+    RecordDetails,
   }
 };
 </script>

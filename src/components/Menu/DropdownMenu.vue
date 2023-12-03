@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { IconManager } from '@/utils/iconManager.js';
+import { IconManager } from '../../utils/iconManager';
 
 export default {
   data() {
