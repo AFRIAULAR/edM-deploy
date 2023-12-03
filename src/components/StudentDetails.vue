@@ -47,4 +47,7 @@ export default {
 .bg-white {
   background-color: white;
 }
+.student-details{
+  width: 330px;
+}
 </style>
