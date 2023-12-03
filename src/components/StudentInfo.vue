@@ -23,22 +23,13 @@
 </template>
 
 <script>
+import studentInfo from '@/data/studentInfo.json'
+
 export default {
   data() {
     return {
       isExpanded: true,
-      studentInfo: {
-        "Period": "2023 - 1",
-        "Status": "Regular Student",
-        "School": "Aldebaran",
-        "Admission Module": "Pre-Center",
-        "Segment": "Undefined",
-        "Segment Detail": "Undefined",
-        "Mathematics": "Undefined Risk (Note: No Information)",
-        "Chemistry": "Undefined Risk (Note: No Information)",
-        "Programming": "Undefined Risk (Note: No Information)",
-        "Communication": "Undefined Risk (Note: No Information)"
-      }
+      studentInfo: studentInfo 
     };
   },
   methods: {
