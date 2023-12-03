@@ -1,44 +1,66 @@
 <template>
-  <div class="career-details p-3 rounded shadow" :style="{ backgroundColor: backgroundColor, height: '373px' }">
+  <div class="career-details p-3 rounded mt-2" :style="{ backgroundColor: backgroundColor, height: isExpanded ? 'auto' : '373px' }">
     <div class="d-flex justify-content-between align-items-center mb-3">
       <div class="d-flex align-items-center">
-        <div class="text-muted fs-4 material-icons-round">drag_indicator</div>
-        <div class="fw-bold ms-2">{{ sectionTitle }}</div>
+        <div class="fw-bold ms-2">Career Details</div>
       </div>
       <div class="d-flex align-items-center">
-        <div class="text-muted fs-4 material-icons-round" :style="{ transform: expandIconTransform }">expand_more</div>
-      </div>
-    </div>
-    <div class="d-flex flex-column gap-3">
-      <div class="d-flex flex-column">
-        <div class="fw-bold text-muted" style="font-size: 12px;">Career Name:</div>
-        <div class="d-flex align-items-center bg-white rounded border border-secondary px-3">
-          <div class="fw-bold" style="font-size: 12px;">{{ careerName }}</div>
-          <div class="material-icons-round" style="font-size: 16px;">arrow_drop_down</div>
+        <div @click="toggleDropdown" style="cursor: pointer;">
+          <i :class="isExpanded ? 'fas fa-chevron-up' : 'fas fa-chevron-down'"></i>
         </div>
       </div>
     </div>
+    <div v-if="showDropdown" class="d-flex flex-column gap-3">
+      <div class="d-flex flex-column">
+        <div class="fw-bold text-muted" style="font-size: 12px;">Career Name:</div>
+        <div class="d-flex align-items-center bg-white rounded border border-secondary px-3" @click="toggleDetails">
+          <div class="fw-bold" style="font-size: 12px;">{{ selectedCareer ? selectedCareer.name : '' }}</div>
+          <div style="font-size: 16px; cursor: pointer; margin-left: auto;">
+            <i :class="isExpanded ? 'fas fa-chevron-up' : 'fas fa-chevron-down'"></i>
+          </div>
+        </div>
+      </div>
+      <div v-if="isExpanded">      
+        <div>{{ selectedCareer.name }} Details</div>
+        <div v-if="selectedCareer.careerID">Career ID: {{ selectedCareer.careerID }}</div>
+        <div v-if="selectedCareer.type">Type: {{ selectedCareer.type }}</div>
+        <div v-if="selectedCareer.modality">Modality: {{ selectedCareer.modality }}</div>
+        <div v-if="selectedCareer.status">Status: {{ selectedCareer.status }}</div>
+        <div v-if="selectedCareer.studentID">Student ID: {{ selectedCareer.studentID }}</div>
+    </div>
+  </div>
   </div>
 </template>
 
 <script>
+import careersDetails from "@/data/careerDetails.json";
+
 export default {
   data() {
     return {
       backgroundColor: '#ffffff',
-      sectionTitle: 'Career Details',
-      expandIconTransform: 'rotate(-180deg)',
-      careerName: 'Software Engineering',
-      // Puedes agregar más datos aquí y utilizarlos en el template
+      showDropdown: false,
+      selectedCareer: null,
+      isExpanded: true
     };
   },
+  mounted() {
+    this.selectedCareer = careersDetails.careers.find(career => career.name === 'Software Engineering');
+  },
+  methods: {
+    toggleDropdown() {
+      this.showDropdown = !this.showDropdown;
+      if (!this.showDropdown) {
+        this.isExpanded = true; 
+      }
+    },
+    toggleDetails() {
+      this.isExpanded = !this.isExpanded;
+    }
+  }
 };
 </script>
 
 <style scoped>
-/* Estilos de Bootstrap */
-.material-icons-round {
-  font-family: 'Material Icons Round';
-  font-size: 16px;
-}
+
 </style>

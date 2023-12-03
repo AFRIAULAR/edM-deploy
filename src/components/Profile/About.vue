@@ -1,5 +1,5 @@
 <template>
-  <div class="about-container bg-white rounded p-3 shadow mt-2">
+  <div class="about-container bg-white rounded p-3 mt-2">
     <div class="d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-center">
         <div class="fw-bold ms-2 title-text">About</div>

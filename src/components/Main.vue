@@ -15,9 +15,9 @@
 </template>
 
 <script>
-import DropdownMenu from '../components/Menu/DropdownMenu.vue'; 
-import Profile from '../components/Profile/Profile.vue'; 
-import RecordDetails from '../components/Details/RecordDetails.vue'; 
+import DropdownMenu from '@/components/Menu/DropdownMenu.vue'; 
+import Profile from '@/components/Profile/Profile.vue'; 
+import RecordDetails from '@/components/Details/RecordDetails.vue'; 
 
 export default {
   components: {

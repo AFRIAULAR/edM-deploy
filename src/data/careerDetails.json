@@ -1,0 +1,14 @@
+{
+  "careers": [
+    {
+      "id": 1,
+      "name": "Software Engineering",
+      "careerID": "0398P",
+      "type": "Graduate",
+      "modality": "On-Campus",
+      "status": "Enrollment",
+      "studentID": "AYSI0123839",
+      "cohort": "A1 2023"
+    }
+  ]
+}
