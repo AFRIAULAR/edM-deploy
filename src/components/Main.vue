@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid" style="margin-top: 65px;">
     <div class="row">
-      <div class="col-1 p-2" style="background-color: #f8f9fa;">
+      <div class="col-1 p-2" style="background-color: #fff;width: 65px;">
         <DropdownMenu /> 
       </div>
       <div class="col-4 p-3" style="background-color: #e9ecef; width: 360px;">

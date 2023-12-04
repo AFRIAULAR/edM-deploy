@@ -14,7 +14,7 @@
     </div>
     <div v-if="isExpanded" class="about-content mt-3">
       <div class="d-flex flex-column">
-        <div v-for="(value, key) in aboutInfo" :key="key" class="info-item">
+        <div v-for="(value, key) in aboutInfo.studentProfile.aboutinfo" :key="key" class="info-item">
           <div class="fw-bold text-muted">{{ key }}:</div>
           <div class="text-muted">{{ value }}</div>
         </div>
@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import aboutInfo from "../../data/aboutInfo.json"; 
+import aboutInfo from "../../data/studentProfile.json"; 
 
 export default {
   data() {

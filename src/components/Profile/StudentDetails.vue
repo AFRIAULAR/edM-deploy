@@ -9,8 +9,8 @@
           alt="Student Image"
         />
         <div class="d-flex flex-column">
-          <div class="fw-bold">Danielle Munchen Schollengberg</div>
-          <div>Reg. ID: AYSI32392</div>
+          <div class="fw-bold">{{ fullName }}</div>
+          <div>Reg. ID: {{ studentID }}</div>
         </div>
       </div>
       <div>
@@ -31,6 +31,7 @@
 
 <script>
 import { IconManager } from '../../utils/iconManager.js';
+import studentProfile from '../../data/studentProfile.json';
 
 export default {
   name: 'StudentDetails',
@@ -38,7 +39,17 @@ export default {
     const { pencil, chatDots, calendar3, envelope, telephone, threeDots } = IconManager;
     return {
       iconManager: { pencil, chatDots, calendar3, envelope, telephone, threeDots },
+      studentProfile: studentProfile,
     };
+  },
+  computed: {
+    fullName() {
+      const { aboutinfo } = this.studentProfile.studentProfile;
+      return `${aboutinfo['First Name']} ${aboutinfo['Last Name']}`;
+    },
+    studentID() {
+      return this.studentProfile.studentProfile.careerdetails.careers[0].studentID; 
+    },
   },
 };
 </script>
@@ -47,7 +58,7 @@ export default {
 .bg-white {
   background-color: white;
 }
-.student-details{
+.student-details {
   width: 330px;
 }
 </style>

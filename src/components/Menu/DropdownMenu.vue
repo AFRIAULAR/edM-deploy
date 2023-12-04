@@ -52,6 +52,7 @@ export default {
 
 <style scoped>
 .icon-wrapper {
+  width: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
