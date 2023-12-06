@@ -1,5 +1,5 @@
 <template>
-  <div class="student-details bg-white rounded p-4">
+  <div class="student-details bg-white rounded ">
     <div class="d-flex flex-column gap-3">
       <div class="d-flex align-items-center gap-3">
         <img
@@ -15,16 +15,14 @@
       </div>
       <div>
         <div>Status: Active</div>
-        <div class="d-flex justify-content-between">
-          <div
-            v-for="(icon, iconName) in iconManager"
-            :key="iconName"
-            class="p-3 rounded"
-          >
-            <i :class="icon" :style="{ backgroundColor: '#ffffff' }"></i>
-          </div>
-        </div>
+      <div class="d-flex justify-content-between">
+        <i
+          v-for="(icon, iconName) in iconManager"
+          :key="iconName"
+          class="material-icons rounded"
+        >{{ icon }}</i>
       </div>
+    </div>
     </div>
   </div>
 </template>
@@ -36,9 +34,10 @@ import studentProfile from '../../data/studentProfile.json';
 export default {
   name: 'StudentDetails',
   data() {
-    const { pencil, chatDots, calendar3, envelope, telephone, threeDots } = IconManager;
+    const { editNote, chat, today, email, phone, more } = IconManager;
     return {
-      iconManager: { pencil, chatDots, calendar3, envelope, telephone, threeDots },
+      iconManager: { editNote, chat, today, email, phone, more },
+      selectedIcon: '', 
       studentProfile: studentProfile,
     };
   },
@@ -51,6 +50,11 @@ export default {
       return this.studentProfile.studentProfile.careerdetails.careers[0].studentID; 
     },
   },
+  methods: {
+    selectIcon(iconName) {
+      this.selectedIcon = iconName === this.selectedIcon ? '' : iconName;
+    },
+  },
 };
 </script>
 
@@ -60,5 +64,15 @@ export default {
 }
 .student-details {
   width: 330px;
+  padding: 15px;
+}
+.material-icons {
+  padding: 10px; 
+  color: #6E6B7B;
+  font-size: 24px;
+  font-family: Material Icons;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word
 }
 </style>

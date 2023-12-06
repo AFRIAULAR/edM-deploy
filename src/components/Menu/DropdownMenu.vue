@@ -1,64 +1,75 @@
 <template>
-  <div class="icon-wrapper">
+  <div 
+    class="icon-wrapper bg-white mt-0" 
+    :class="{ expanded: isExpanded }"
+    :style="{ width: isExpanded ? '250px' : '65px' }"
+    @click="toggleExpandMenu"
+  >
     <i
       v-for="(iconClass, iconName) in selectedIcons"
       :key="iconName"
-      :class="[iconClass, { 'special-icon': iconName === selectedIcon }]"
+      class="material-icons bg-rounded"
+      :class="{ 'special-icon': iconName === selectedIcon }"
+      :style="{ 
+        backgroundColor: isExpanded && selectedIcon === iconName ? '#4436FD' : '#ffffff',
+        color: isExpanded && selectedIcon === iconName ? '#ffffff' : '#6E6B7B',
+      }"
       @click="selectIcon(iconName)"
-      :style="{ backgroundColor: iconName === selectedIcon ? '#4436FD' : '#ffffff' }"
-    ></i>
+    >{{ iconClass }}</i>
   </div>
 </template>
 
 <script>
-import { IconManager } from '../../utils/iconManager';
-
 export default {
   data() {
-    const {
-      dashBoard,
-      more,
-      add,
-      outbound,
-      loop,
-      analytics,
-      school,
-      leaderboard,
-      addChart,
-    } = IconManager;
-
     return {
       selectedIcon: '',
+      isExpanded: false,
       selectedIcons: {
-        dashBoard,
-        more,
-        add,
-        outbound,
-        loop,
-        analytics,
-        school,
-        leaderboard,
-        addChart,
+        dashBoard: 'home',
+        more: 'more_horiz',
+        add: 'add_box',
+        outbound: 'outbound',
+        loop: 'loop',
+        analytics: 'analytics',
+        school: 'school',
+        leaderboard: 'leaderboard',
+        addChart: 'add_chart',
+        accountTree: 'account_tree',
       },
     };
   },
   methods: {
-    selectIcon(iconName) {
-      this.selectedIcon = iconName === this.selectedIcon ? '' : iconName;
+    toggleExpandMenu() {
+      this.isExpanded = !this.isExpanded; 
+      this.$emit('expand-menu', this.isExpanded); 
     },
-  },
+    selectIcon(iconName) {
+      this.selectedIcon = iconName;
+    }
+  }
 };
 </script>
 
 <style scoped>
 .icon-wrapper {
-  width: 45px;
+  width: 65px ;
+  padding-top: 0;
+  margin-top: 0;
+  background-color: #ffffff;
+  color: #6E6B7B;
+  
+}
+
+.expanded {
+  width: 250px;
+  margin-top: 0;
+  padding: 0; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding: 5px;
-  background-color: #ffffff;
+  text-align: left;
+  z-index: 2;
 }
 
 .special-icon {
@@ -67,12 +78,14 @@ export default {
 }
 
 .icon-wrapper i {
-  width: 45px;
-  height: 42px;
-  background: #ffffff;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
+  font-family: 'Material Icons'; 
+  font-size: 24px; 
+  font-weight: 400;
+  line-height: 21px;
+  border-radius: 10px; 
   padding: 10px;
-  margin-bottom: 10px;
+  margin-top: 10px; 
+  transition: width 0.3s ease, padding 0.3s ease; 
+  
 }
 </style>
