@@ -1,0 +1,42 @@
+{
+  "dashBoard": {
+    "iconClass": "home",
+    "text": "Dashboard"
+  },
+  "more": {
+    "iconClass": "more_horiz",
+    "text": "Reports"
+  },
+  "add": {
+    "iconClass": "add_box",
+    "text": "Smart Enroller"
+  },
+  "outbound": {
+    "iconClass": "outbound",
+    "text": "Dropout Shield"
+  },
+  "loop": {
+    "iconClass": "loop",
+    "text": "Retention Partner"
+  },
+  "analytics": {
+    "iconClass": "analytics",
+    "text": "Risk Detector"
+  },
+  "school": {
+    "iconClass": "school",
+    "text": "Academic Offer"
+  },
+  "leaderboard": {
+    "iconClass": "leaderboard",
+    "text": "My Reports"
+  },
+  "addChart": {
+    "iconClass": "add_chart",
+    "text": "Custom Reports"
+  },
+  "accountTree": {
+    "iconClass": "account_tree",
+    "text": "Workflows"
+  }
+}
