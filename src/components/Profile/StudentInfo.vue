@@ -2,15 +2,14 @@
   <div class="student-info p-3 bg-white rounded" style="margin-top: 10px; padding: 15px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05); border-radius: 6px;">
     <div class="d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-center">
-        <div class="text-muted fs-4"></div>
+        <div class="material-icons text-muted fs-4">drag_indicator</div>
         <div class="fw-bold ms-2">Student Information</div>
       </div>
       <div class="d-flex align-items-center">
         <div
-          class="text-muted fs-4"
-          :class="{ 'fas fa-chevron-up': isExpanded, 'fas fa-chevron-down': !isExpanded }"
+          class="material-icons text-muted fs-4"
           @click="toggleCard"
-        ></div>
+        >{{ isExpanded ? 'expand_less' : 'expand_more' }}</div>
       </div>
     </div>
     <div v-if="isExpanded" class="mt-3">
@@ -23,7 +22,7 @@
 </template>
 
 <script>
-import studentProfile from '../../data/studentProfile.json';
+import studentProfile from '@/data/studentProfile.json';
 
 export default {
   data() {
