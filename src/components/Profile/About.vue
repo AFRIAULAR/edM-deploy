@@ -44,6 +44,9 @@ export default {
 </script>
 
 <style scoped>
+.about-container{
+  width: 330px;
+}
 .rotate-up {
   transform: rotate(180deg); 
 }

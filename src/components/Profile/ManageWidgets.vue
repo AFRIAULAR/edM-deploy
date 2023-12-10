@@ -15,7 +15,9 @@ export default {
 </script>
 
 <style scoped>
-
+.manage-widgets{
+  width: 330px;
+}
 .career-details {
   height: 45px;
   border-radius: 6px;

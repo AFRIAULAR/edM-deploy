@@ -1,5 +1,5 @@
 <template>
-  <div class="career-details p-3 rounded mt-2" :style="{ backgroundColor: backgroundColor, height: isExpanded ? 'auto' : '373px' }">
+  <div class="career-details p-3 rounded mt-2" :style="{ backgroundColor: backgroundColor, height: isExpanded ? 'auto' : '330px' }">
     <div class="d-flex justify-content-between align-items-center mb-3">
       <div class="d-flex align-items-center">
         <div class="material-icons text-muted fs-4">drag_indicator</div>
@@ -70,4 +70,7 @@ export default {
 </script>
 
 <style scoped>
+.career-details{
+  width: 330px;
+}
 </style>
