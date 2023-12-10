@@ -47,7 +47,7 @@ export default {
   margin-top: 0;
   background-color: #ffffff;
   color: #6E6B7B;
-  
+
 }
 
 .expanded {
@@ -56,14 +56,15 @@ export default {
   padding: 0; 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   text-align: left;
-  z-index: 999;
+
 }
 
 .special-icon {
   color: #ffffff;
   background: #4436FD;
+  
 }
 
 .icon-wrapper i {
@@ -75,6 +76,6 @@ export default {
   padding: 10px;
   margin-top: 10px; 
   transition: width 0.3s ease, padding 0.3s ease; 
-
+  z-index: 999;
 }
 </style>

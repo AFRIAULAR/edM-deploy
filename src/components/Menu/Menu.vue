@@ -5,7 +5,7 @@
       :is-menu-expanded="isMenuExpanded"
       :menu-width="menuWidth"
       :selected-icon="selectedIcon"
-      :selected-icons="selectedIcons"
+      :selected-icons="iconManager"
       @expand-menu="onExpandMenu"
       @select-icon="onSelectIcon"
     />
@@ -14,6 +14,7 @@
 
 <script>
 import DropdownMenu from '@/components/Menu/DropdownMenu.vue';
+import { IconManager } from '../../utils/iconManager.js';
 
 
 export default {
@@ -28,18 +29,7 @@ export default {
       menuWidth: 65,
       isMenuExpanded: false,
       selectedIcon: '',
-      selectedIcons: {
-        dashBoard: 'home',
-        more: 'more_horiz',
-        add: 'add_box',
-        outbound: 'outbound',
-        loop: 'loop',
-        analytics: 'analytics',
-        school: 'school',
-        leaderboard: 'leaderboard',
-        addChart: 'add_chart',
-        accountTree: 'account_tree',
-      },
+      iconManager: IconManager, 
     };
   },
   methods: {

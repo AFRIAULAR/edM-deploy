@@ -1,12 +1,18 @@
 <template>
   <div>
-    <h3>Columna Derecha</h3>
-    <p>Contenido de la columna derecha</p>
+    <RecordDetailsTabs /> 
+    <Cards />
   </div>
 </template>
 
 <script>
-</script>
+import RecordDetailsTabs from './RecordDetailsTabs.vue';
+import Cards from './Cards.vue';
 
-<style scoped>
-</style>
+export default {
+  components: {
+    RecordDetailsTabs, 
+    Cards
+},
+}
+</script>

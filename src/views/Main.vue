@@ -1,11 +1,13 @@
 <template>
-  <div class="container-fluid" style="margin-top: 65px;">
-    <div class="row">
-      <Menu :bgColor="bgColor" />
-      <div class="col-4 p-3" style="background-color: #e9ecef; width: 360px; ">
+  <div class="container-fluid" style="margin-top: 65px; max-width: 1600px;">
+     <div class="row">
+      <div class="menu col-auto" style="width: 65px; position: relative;">
+        <Menu :bgColor="bgColor" />
+      </div> 
+      <div class="profile col-auto" style="width: 360px; background-color: #e9ecef; padding-top: 15px; z-index: 1;">
         <Profile />
       </div>
-      <div class="col-7 p-4" style="background-color: #ced4da;">
+      <div class="record col " style="background-color: #e9ecef; padding-top: 15px;">
         <RecordDetails />
       </div>
     </div>
@@ -23,10 +25,17 @@ export default {
     Profile,
     RecordDetails
   },
- data() {
+  data() {
     return {
       bgColor: '#fff',
     };
   },
 };
 </script>
+<style scoped>
+.menu {
+  z-index: 2; 
+  margin: 5px;
+  padding: 0 5px;
+}
+</style>
