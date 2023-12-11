@@ -42,5 +42,7 @@ export default {
 <style>
   .student-info {
     width: 330px;
+    font-size: 12px;
+    line-height: 17px;
   }
 </style>

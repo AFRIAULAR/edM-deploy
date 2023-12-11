@@ -2,7 +2,7 @@
   <div class="activity-container">
     <ul class="activity-list">
       <li
-        v-for="(activity, index) in items[0].activities"
+        v-for="(activity, index) in items.studentInfo[0].activities"
         :key="index"
         :class="['activity-item', activity.borderClass, { 'active': selectedActivity === index }]"
       >

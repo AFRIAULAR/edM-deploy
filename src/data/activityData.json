@@ -1,19 +1,102 @@
-[
-  {
-    "studentID": "AYSI0123839",
-    "activities": [
-      {
-        "title": " ",
-        "subtitle": "Activity"
-      },
-      {
-        "title": "email",
-        "subtitle": "Emails"
-      },
-      {
-        "title": "phone",
-        "subtitle": "Calls"
-      }
-    ]
+{
+  "studentInfo": [
+    {
+      "studentID": "AYSI0123839",
+      "activities": [
+        {
+          "title": " ",
+          "subtitle": "Activity"
+        },
+        {
+          "title": "email",
+          "subtitle": "Emails"
+        },
+        {
+          "title": "phone",
+          "subtitle": "Calls"
+        }
+      ]
+    }
+  ],
+  "cardInfo": [
+    {
+      "icon": "mail",
+      "mainText": "Email Sent",
+      "secondaryText": " by Gerardo Moyano",
+      "dateText": "Sep 23, 2023 - 1:45pm",
+      "additionalInfo1": "Upselling email sent.",
+      "additionalInfo2": "View Email"
+    },
+    {
+      "icon": "chat",
+      "mainText": "Chat Meeting",
+      "secondaryText": " by Prof. Jean Charleton",
+      "dateText": "Sep 2, 2023 - 1:45pm",
+      "additionalInfo1": "Whatsapp chat meeting.",
+      "additionalInfo2": ""
+    },
+    {
+      "icon": "school",
+      "mainText": "LMS Assignment Delivered",
+      "secondaryText": " by Danielle Munchen Schollengberg",
+      "dateText": "Aug 5, 2023 - 5:33pm",
+      "additionalInfo1": "For: “Career Planning and Development”",
+      "additionalInfo2": "Assignment Name: “Quiz 01”, Delivered ON TIME.Grade: TBD"
+    },
+    {
+      "icon": "call",
+      "mainText": "Call",
+      "secondaryText": " from Gerardo Moyano",
+      "dateText": "Aug 4, 2023 - 1:45pm",
+      "additionalInfo1": "Direct Call made to +52 55 22126164",
+      "additionalInfo2": "Call Duration: 0 mins. 10 sec."
+    },
+    {
+      "icon": "fiber_manual_record",
+      "mainText": "Tag Added",
+      "secondaryText": " from Career Planning and Development,by Prof. Jean Charleton",
+      "dateText": "Aug 3, 2023 - 5:33pm",
+      "additionalInfo1": "Multiple Problems, Injuried, Check, Late",
+      "additionalInfo2": ""
+    },
+    {
+      "icon": "fiber_manual_record",
+      "mainText": "Tag Added",
+      "secondaryText": " by Gerardo Moyano",
+      "dateText": "Aug 2, 2023 - 1:45pm",
+      "additionalInfo1": "Inactive, Control, Schollarship",
+      "additionalInfo2": ""
+    },
+    {
+      "icon": "mail",
+      "mainText": "Email Sent",
+      "secondaryText": " by Prof. Jean Charleton",
+      "dateText": "Aug 2, 2023 - 1:45pm",
+      "additionalInfo1": "Check email sent.",
+      "additionalInfo2": "View Email"
+    },
+     {
+    "icon": "call",
+    "mainText": "Call",
+    "secondaryText": " from Gerardo Moyano",
+    "dateText": "Jul 12, 2023 - 1:45pm",
+    "additionalInfo1": "Direct Call made to +52 55 22126164",
+    "additionalInfo2": "Call Duration: 1 mins. 22 sec."
+  },
+   {
+    "icon": "call",
+    "mainText": "Call",
+    "secondaryText": " from Gerardo Moyano",
+    "dateText": "Jul 12, 2023 - 1:45pm",
+    "additionalInfo1": "Direct Call made to +52 55 22126164",
+    "additionalInfo2": "Call Duration: 2 mins. 30 sec."
+  },
+   {
+    "icon": "mail",
+    "mainText": "Initial Contact",
+    "secondaryText": " by Gerardo Moyano",
+    "dateText": "Jun 11, 2023 - 1:45pm",
+    "additionalInfo1": "Welcome email sent.",
+    "additionalInfo2": "View Email"
   }
-]
+  ]}
