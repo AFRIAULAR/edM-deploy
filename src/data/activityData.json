@@ -1,0 +1,19 @@
+[
+  {
+    "studentID": "AYSI0123839",
+    "activities": [
+      {
+        "title": " ",
+        "subtitle": "Activity"
+      },
+      {
+        "title": "email",
+        "subtitle": "Emails"
+      },
+      {
+        "title": "phone",
+        "subtitle": "Calls"
+      }
+    ]
+  }
+]
