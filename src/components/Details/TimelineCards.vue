@@ -5,6 +5,7 @@
         <div class="month-block">
           <div class="month-header">
             <span class="month-text">{{ getMonth(info.dateText) }}</span>
+            <span class="year-text">{{ getYear(info.dateText) }}</span>
           </div>
         </div>
       </div>
@@ -35,6 +36,8 @@
 </template>
 
 <script>
+
+import { getMonth, getYear, monthTitle } from '../../utils/dateFunctions.js'
 import activityData from '@/data/activityData.json'
 
 export default {
@@ -46,46 +49,30 @@ export default {
   mounted() {
     this.cardInfo = activityData.cardInfo;
   },
-   methods: {
-    getMonth(dateText) {
-      const months = {
-        'Jan': 'January', 'Feb': 'February', 'Mar': 'March', 'Apr': 'April', 'May': 'May', 'Jun': 'June',
-        'Jul': 'July', 'Aug': 'August', 'Sep': 'September', 'Oct': 'October', 'Nov': 'November', 'Dec': 'December'
-      };
-
-      const monthAbbr = dateText.slice(0, 3);
-      return months[monthAbbr] || '';
-    },
-
-    monthTitle(index) {
-      if (index === 0) {
-        return true;
-      } else {
-        const currentMonth = this.getMonth(this.cardInfo[index].dateText);
-        const prevMonth = this.getMonth(this.cardInfo[index - 1].dateText);
-        return currentMonth !== prevMonth;
-      }
-    }
+  methods: {
+    getMonth,
+    getYear,
+    monthTitle
   }
 }
 </script>
 
 <style>
-
 .month-header {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   height: 25px;
-  padding: 8px;
+  padding: 8px 55px;
   background-color: #fff;
   margin: 0 15px;
 }
 
-.month-text {
+.month-text, .year-text {
   color: #7367F0;
   font-weight: bold;
   font-size: 12px;
+  margin-right: 3px;
 }
 
 
