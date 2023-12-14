@@ -11,8 +11,8 @@
           @click="selectActivity(index)"
           class="activity-link"
         >
-          <div class="material-icons" :style="titleStyle">{{ activity.title }}</div>
-          <div class="text-uppercase" :style="subtitleStyle">{{ activity.subtitle }}</div>
+          <div class="material-icons" >{{ activity.title }}</div>
+          <div class="text-uppercase" >{{ activity.subtitle }}</div>
         </a>
       </li>
     </ul>
@@ -25,7 +25,7 @@ export default {
   data() {
     return {
       items: activityData,
-      selectedActivity: null
+      selectedActivity: null,
     };
   },
   methods: {

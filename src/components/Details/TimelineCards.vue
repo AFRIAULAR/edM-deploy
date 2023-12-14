@@ -1,30 +1,32 @@
 <template>
-  <div class="month-block">
-    <div class="month-header">
-      <span class="month-text">SEPTEMBER</span>
-    </div>
-  </div>
-
-  <div class="timeline-card-container">
-    <div v-for="(info, index) in cardInfo" :key="index" class="timeline-card">
-      <div class="icon-block">
-        <div class="icon-circle">
-          <span class="icon-text">{{ info.icon }}</span>
+  <div>
+    <div v-for="(info, index) in cardInfo" :key="index">
+      <div v-if="monthTitle(index)">
+        <div class="month-block">
+          <div class="month-header">
+            <span class="month-text">{{ getMonth(info.dateText) }}</span>
+          </div>
         </div>
       </div>
-
-      <div class="info-block">
-        <div class="info-content">
-          <div class="info-header">
-            <div>
-              <span class="main-text">{{ info.mainText }}</span>
-              <span class="secondary-text">{{ info.secondaryText }}</span>
-            </div>
-            <div class="date-text">{{ info.dateText }}</div>
+      <div class="timeline-card">
+        <div class="icon-block">
+          <div class="icon-circle">
+            <span class="icon-text">{{ info.icon }}</span>
           </div>
-          <div class="additional-info">
-            <span class="additional-info-text">{{ info.additionalInfo1 }}</span>
-            <span class="additional-info-text">{{ info.additionalInfo2 }}</span>
+        </div>
+        <div class="info-block">
+          <div class="info-content">
+            <div class="info-header">
+              <div>
+                <span class="main-text">{{ info.mainText }}</span>
+                <span class="secondary-text">{{ info.secondaryText }}</span>
+              </div>
+              <div class="date-text">{{ info.dateText }}</div>
+            </div>
+            <div class="additional-info">
+              <span class="additional-info-text">{{ info.additionalInfo1 }}</span>
+              <span class="additional-info-text">{{ info.additionalInfo2 }}</span>
+            </div>
           </div>
         </div>
       </div>
@@ -38,11 +40,32 @@ import activityData from '@/data/activityData.json'
 export default {
   data() {
     return {
-      cardInfo: [] 
+      cardInfo: []
     };
   },
   mounted() {
     this.cardInfo = activityData.cardInfo;
+  },
+   methods: {
+    getMonth(dateText) {
+      const months = {
+        'Jan': 'January', 'Feb': 'February', 'Mar': 'March', 'Apr': 'April', 'May': 'May', 'Jun': 'June',
+        'Jul': 'July', 'Aug': 'August', 'Sep': 'September', 'Oct': 'October', 'Nov': 'November', 'Dec': 'December'
+      };
+
+      const monthAbbr = dateText.slice(0, 3);
+      return months[monthAbbr] || '';
+    },
+
+    monthTitle(index) {
+      if (index === 0) {
+        return true;
+      } else {
+        const currentMonth = this.getMonth(this.cardInfo[index].dateText);
+        const prevMonth = this.getMonth(this.cardInfo[index - 1].dateText);
+        return currentMonth !== prevMonth;
+      }
+    }
   }
 }
 </script>
@@ -65,16 +88,15 @@ export default {
   font-size: 12px;
 }
 
-.timeline-card-container {
-  margin: 0 15px;
-  padding: 10px;
-  background-color: #fff;
-} 
+
 .timeline-card {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 20px;
+  margin: 0 15px;
+  padding: 10px;
+  background-color: #fff;
 }
 
 .icon-circle {
