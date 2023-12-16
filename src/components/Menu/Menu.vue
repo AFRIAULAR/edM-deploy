@@ -1,11 +1,10 @@
 <template>
-  <div class="container-menu col-1" 
-  :style="{ backgroundColor: bgColor, width: menuWidth + 'px' }">
+  <div class="container-menu col-1" :style="{ backgroundColor: bgColor, width: menuWidth + 'px' }">
     <DropdownMenu
       :is-menu-expanded="isMenuExpanded"
       :menu-width="menuWidth"
       :selected-icon="selectedIcon"
-      :selected-icons="iconManager"
+      :selected-icons="selectedIcons" 
       @expand-menu="onExpandMenu"
       @select-icon="onSelectIcon"
     />
@@ -14,12 +13,14 @@
 
 <script>
 import DropdownMenu from '@/components/Menu/DropdownMenu.vue';
-import { IconManager } from '../../utils/iconManager.js';
-
+import ExpandedMenu from '@/components/Menu/ExpandedMenu.vue'; 
+import { IconManager } from '@/utils/iconManager.js';
 
 export default {
   components: {
     DropdownMenu,
+    ExpandedMenu,
+    
   },
   props: {
     bgColor: String,
@@ -29,7 +30,7 @@ export default {
       menuWidth: 65,
       isMenuExpanded: false,
       selectedIcon: '',
-      iconManager: IconManager, 
+      selectedIcons: IconManager, 
     };
   },
   methods: {
