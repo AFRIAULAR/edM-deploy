@@ -15,6 +15,6 @@ export const IconManager = {
   email: 'email',
   phone: 'phone',
   expand_less: "expand_less",
-  expand_more: "expand_more"
-
+  expand_more: "expand_more",
+  copy: "content_copy"
 };

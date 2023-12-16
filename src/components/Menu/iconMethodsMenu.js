@@ -1,4 +1,4 @@
-export const toggleIconSize = (iconName) => {
+export const toggleIconSize = function (iconName) {
   const shouldExpand = this.selectedIcon !== iconName || !this.isExpanded;
   this.$emit("expand-menu", shouldExpand);
   this.$emit("select-icon", shouldExpand ? iconName : "");
@@ -8,14 +8,14 @@ export const toggleIconSize = (iconName) => {
   }
 };
 
-export const buttonClasses = (iconName) => {
+export const buttonClasses = function (iconName) {
   return [
     (iconName === this.selectedIcon || (this.isExpanded && iconName === "dashboard")) ? "special-icon" : "",
     this.isExpanded && ["analytics", "school"].includes(iconName) ? "expanded-button" : "",
   ];
 };
 
-export const buttonStyles = (iconName) => {
+export const buttonStyles = function (iconName) {
   const isActive = (this.isExpanded && this.selectedIcon === iconName) || iconName === "dashboard";
   return {
     backgroundColor: isActive ? "#4436FD" : "#ffffff",
