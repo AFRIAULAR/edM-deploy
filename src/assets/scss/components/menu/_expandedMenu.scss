@@ -1,0 +1,75 @@
+.icon-button-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon-expand {
+  font-size: 24px;
+ 
+  margin-left:40px;
+}
+
+.expanded .icon-expand {
+  visibility: visible;
+}
+
+.icon-wrapper {
+  width: 65px;
+  padding-top: 10px;
+  margin-top: 10px;
+  color: #6e6b7b;
+}
+
+.expanded {
+  width: 250px;
+  margin-top: 0;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.icon-button {
+  display: flex;
+  font-family: "Material Icons";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 21px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  transition: width 0.3s ease, padding 0.3s ease;
+  z-index: 999;
+  align-items: center;
+  max-width: 230px;
+}
+
+.button-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.special-icon {
+  color: #ffffff;
+  background: #4436fd;
+}
+
+.icon-text-container {
+  display: flex;
+  align-items: center;
+  text-align: start;
+}
+
+.icon-text {
+  margin-left: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  width: 196px;
+}

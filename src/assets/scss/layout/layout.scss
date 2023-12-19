@@ -1,0 +1,27 @@
+.container-fluid {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 1600px;
+
+  .row {
+    .menu {
+      width: 65px;
+      position: relative;
+      z-index: 2;
+      margin-top: 0px;
+      padding: 0 5px;
+    }
+
+    .profile {
+      width: 360px;
+      background-color: #e9ecef;
+      padding-top: 15px;
+      z-index: 1;
+    }
+
+    .record {
+      background-color: #e9ecef;
+      padding-top: 15px;
+    }
+  }
+}

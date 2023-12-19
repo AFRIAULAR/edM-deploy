@@ -68,31 +68,6 @@ methods: {
 };
 </script>
 
-<style scoped>
-.bg-white {
-  background-color: white;
-}
-.student-details {
-  width: 330px;
-  padding: 15px;
-}
-.material-icons {
-  padding: 10px; 
-  color: #6E6B7B;
-  font-size: 24px;
-  font-family: 'Material Icons';
-  font-weight: 400;
-  line-height: 21px;
-  word-wrap: break-word;
-}
-.reg-copy{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.toCopy:hover {
-  cursor: pointer;
-  filter: brightness(0.8); 
-  color: #4436FD;
-}
+<style lang="scss" scoped>
+@import '../../assets/scss/components/profile/_student-details.scss';
 </style>

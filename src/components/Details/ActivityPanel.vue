@@ -36,44 +36,6 @@ export default {
 };
 </script>
 
-<style>
-.activity-container {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 0px;
-}
-
-.activity-list {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  padding: 15px;
-  padding-bottom: 0;
-  margin-bottom: 0px;
-  color: #6e6b7b;
-}
-
-.activity-item {
-  padding: 10px 15px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-radius: 6px 6px 0px 0px;
-  opacity: 0.4;
-  background: #FFF;
-  margin-right: 2px;
-}
-
-.activity-link {
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 0px;
-
-}
-
-.active {
-  opacity: 1; 
-  font-weight: 700;
-}
+<style lang="scss" scoped>
+@import '../../assets/scss/components/details/activity-panel';
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" :style="{ 'background-color': primaryColor }">
+  <nav class="navbar navbar-expand-lg" :style="{ 'background-color': primaryColor }">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="../assets/img/left-logo-menuIcon.png"></a>
       <button
@@ -31,3 +31,6 @@ export default {
 }
 </script>
 
+<style lang="scss" scoped>
+@import '../assets/scss/components/navbar';
+</style>

@@ -19,62 +19,6 @@ export default {
 };
 </script>
 
-<style>
-
-.timeline-container {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  height: 53px;
-  padding: 15px;
-  margin-top: 0;
-  margin: 0 15px;
-}
-
-.timeline-header {
-  
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 53px;
-  align-items: flex-start;
-
-}
-
-.timeline-title {
-  color: #6E6B7B;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.timeline-dropdown {
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  border: 1px #D8D6DE solid;
-  color: #6E6B7B;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.timeline-search {
-  display: flex;
-  align-items: center;
-  height: 38px;
-  border-radius: 5px;
-  border: 1px #D8D6DE solid;
-  justify-content: space-between;
-}
-
-.timeline-input {
-  color: #6E6B7B;
-  font-size: 12px;
-  font-weight: 700;
-  border: none;
-  outline: none;
- 
-}
-
-
+<style lang="scss" scoped>
+@import '../../assets/scss/components/details/_timeline-header';
 </style>

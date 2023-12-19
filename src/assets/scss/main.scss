@@ -1,0 +1,18 @@
+//
+@import '../scss/base/_reset';
+@import '../scss/base/_typography';
+@import '../scss/base/_variables';
+
+// 
+@import '../scss/components/_navBar';
+@import '../scss/components/menu/_expandedMenu';
+@import '../scss/components/details/_activity-panel';
+@import '../scss/components/details/_cards';
+@import '../scss/components/details/_record-details-tabs';
+@import '../scss/components/details/_timeline-cards';
+@import '../scss/components/details/_timeline-header';
+
+@import '../scss/components/profile/student-details';
+
+// 
+@import '../scss/layout/layout.scss'; 

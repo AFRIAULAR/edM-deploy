@@ -33,40 +33,6 @@ export default {
 };
 </script>
 
-<style>
-.material-icons {
-  font-size: 25px;
-}
-.card-container{
- margin:10px
-}
-.card-icon{
-  background-color: #91cc75;
-  width: 40px;
-  height: 40px;
-}
-.subtitle{
-  font-size: 18px;
-  color: #6e6b7b
-}
-.card-text{
-  font-size: 14px;
-}
-.card-container-upper{
-  border-bottom: 1px solid #dddddd;
-  padding: 10px;
-  color: #6e6b7b;
-  display: flex;
-  font-weight: 700;
-  justify-content: space-between;
-}
-.card-container-lower{
-  color: #6e6b7b;
-  padding: 5px;
-  font-weight: 700;
-}
-.icon2{
-  color: #6e6b7b;
-  font-size: 16px;
-}
+<style lang="scss" scoped>
+@import '../../assets/scss/components/details/_cards';
 </style>

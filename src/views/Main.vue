@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid" style="margin-top: 65px; max-width: 1600px;">
+  <div class="container-fluid" style="max-width: 1600px;">
      <div class="row">
       <div class="menu col-auto" style="width: 65px; position: relative;">
         <Menu />
@@ -28,10 +28,7 @@ export default {
 
 };
 </script>
-<style scoped>
-.menu {
-  z-index: 2; 
-  margin: 5px;
-  padding: 0 5px;
-}
+
+<style lang="scss" scoped>
+@import '../assets/scss/main.scss';
 </style>
