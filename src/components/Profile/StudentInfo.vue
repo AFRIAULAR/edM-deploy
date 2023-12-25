@@ -39,10 +39,6 @@ export default {
 };
 </script>
 
-<style>
-  .student-info {
-    width: 330px;
-    font-size: 12px;
-    line-height: 17px;
-  }
+<style lang="scss" scoped>
+@import '../../assets/scss/components/profile/profile.scss';
 </style>

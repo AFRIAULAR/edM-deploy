@@ -3,11 +3,11 @@
     <div class="d-flex justify-content-between align-items-center mb-3">
       <div class="d-flex align-items-center">
         <div class="material-icons text-muted fs-4">drag_indicator</div>
-        <div class="fw-bold ms-2">Career Details</div>
+        <div class="fw-bold ms-2 ml-5">Career Details</div>
       </div>
       <div class="d-flex align-items-center">
         <div @click="toggleDropdown" style="cursor: pointer;">
-          <i class="material-icons">
+          <i class="material-icons" >
             {{ isExpanded ? 'expand_more' : 'expand_less' }}
           </i>
         </div>
@@ -69,8 +69,6 @@ export default {
 };
 </script>
 
-<style scoped>
-.career-details{
-  width: 330px;
-}
+<style lang="scss" scoped>
+@import '../../assets/scss/components/profile/profile.scss';
 </style>

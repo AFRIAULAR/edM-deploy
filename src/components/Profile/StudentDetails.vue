@@ -70,4 +70,5 @@ methods: {
 
 <style lang="scss" scoped>
 @import '../../assets/scss/components/profile/_student-details.scss';
+@import '../../assets/scss/components/profile/profile.scss';
 </style>

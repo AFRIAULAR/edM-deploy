@@ -1,4 +1,4 @@
-// Mobile devices (portrait phones, less than 576px)
+
 @media (max-width: 575.98px) {
   .navbar {
     height: 50px; 
@@ -22,19 +22,10 @@
   }
 }
 
-// Rest of the media queries for larger devices...
-@media (min-width: 576px) {
-  /* ... */
+@media (max-width: 768px) {
+  .menu {
+    display: none; 
+  }
+
 }
 
-@media (min-width: 768px) {
-  /* ... */
-}
-
-@media (min-width: 992px) {
-  /* ... */
-}
-
-@media (min-width: 1200px) {
-  /* ... */
-}
