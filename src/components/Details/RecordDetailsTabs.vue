@@ -1,6 +1,6 @@
 <template>
   <div class="container-tabs">
-    <div class="card">
+    <div class="card-tab">
       <div class="card-header">
         <div class="card-title-id">
           Record Details / {{ studentProfile.studentProfile.careerdetails.careers[0].studentID }}

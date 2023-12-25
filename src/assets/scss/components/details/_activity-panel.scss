@@ -2,7 +2,11 @@
   display: flex;
   align-items: flex-start;
   margin-bottom: 0px;
-
+  
+.text-uppercase{
+  text-align: center;
+  margin-top: 10px;
+}
   .activity-list {
     list-style-type: none;
     display: flex;

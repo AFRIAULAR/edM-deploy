@@ -7,6 +7,7 @@
       <div class="profile col-12" :style="profileStyles">
         <Profile :bgColor="backgroundColor" :profileWidth="profileWidth" />
       </div>
+      <Scrollbar/>
       <div class="record col" :style="{ backgroundColor: backgroundColor, paddingTop: '15px', width: recordWidth }">
         <RecordDetails :bgColor="backgroundColor" />
       </div>
@@ -18,12 +19,14 @@
 import Menu from '@/components/Menu/Menu.vue';
 import Profile from '@/components/Profile/Profile.vue';
 import RecordDetails from '@/components/Details/RecordDetails.vue';
+import Scrollbar from '@/components/Scrollbar.vue'
 
 export default {
   components: {
     Menu,
     Profile,
     RecordDetails,
+    Scrollbar,
   },
   data() {
     return {
