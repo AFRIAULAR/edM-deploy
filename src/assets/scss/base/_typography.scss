@@ -1,0 +1,20 @@
+// Fonts
+$body-font: 'Montserrat', sans-serif;
+$heading-font: 'Montserrat', sans-serif;
+
+// Font sizes
+$small-font-size: 12px;
+$medium-font-size: 14px;
+$large-font-size: 18px;
+
+// Typography styles
+body {
+  font-family: $body-font;
+  font-size: $medium-font-size;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+}
+

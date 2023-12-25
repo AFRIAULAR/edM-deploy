@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg" :style="{ 'background-color': primaryColor }">
+  <nav class="navbar navbar-expand-lg" :style="{ 'background-color': $primaryColor }">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="../assets/img/left-logo-menuIcon.png"></a>
       <button
@@ -24,13 +24,14 @@
 export default {
   data() {
     return {
-      primaryColor: '#4436FD' 
+      $primaryColor: '#4436FD' 
     };
   }
-
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/scss/components/navbar';
+@import '../assets/scss/components/_navbar';
+@import '../assets/scss/base/_variables';
+@import '../assets/scss/base/_responsive'; 
 </style>

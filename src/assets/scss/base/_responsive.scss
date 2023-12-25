@@ -1,0 +1,40 @@
+// Mobile devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .navbar {
+    height: 50px; 
+  }
+
+  .container-menu {
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: stretch;
+
+    .menu,
+    .profile,
+    .record {
+      width: 100%;
+      padding-top: 15px;
+    }
+  }
+}
+
+// Rest of the media queries for larger devices...
+@media (min-width: 576px) {
+  /* ... */
+}
+
+@media (min-width: 768px) {
+  /* ... */
+}
+
+@media (min-width: 992px) {
+  /* ... */
+}
+
+@media (min-width: 1200px) {
+  /* ... */
+}

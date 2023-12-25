@@ -6,10 +6,10 @@
   .row {
     .menu {
       width: 65px;
-      position: relative;
       z-index: 2;
       margin-top: 0px;
-      padding: 0 5px;
+      padding: 0;
+      background-color: #fff;
     }
 
     .profile {

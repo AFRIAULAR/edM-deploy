@@ -1,12 +1,25 @@
+.special-icon {
+  background: #4436FD;
+  color: #ffffff;
+}
+
+.special-icon,
+.special-text {
+  color: #ffffff;
+}
+
 .icon-button-container {
   display: flex;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
 }
 
 .icon-expand {
   font-size: 24px;
- 
-  margin-left:40px;
+  margin-left: 30px;
+  padding: 0;
 }
 
 .expanded .icon-expand {
@@ -17,7 +30,6 @@
   width: 65px;
   padding-top: 10px;
   margin-top: 10px;
-  color: #6e6b7b;
 }
 
 .expanded {
@@ -28,6 +40,7 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  box-shadow: 4px 0px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 .icon-button {
@@ -38,8 +51,8 @@
   line-height: 21px;
   border-radius: 10px;
   border: none;
-  padding: 10px;
-  margin-top: 10px;
+  padding: 5px;
+  margin: 10px 5px;
   transition: width 0.3s ease, padding 0.3s ease;
   z-index: 999;
   align-items: center;
@@ -51,11 +64,6 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-}
-
-.special-icon {
-  color: #ffffff;
-  background: #4436fd;
 }
 
 .icon-text-container {
@@ -72,4 +80,22 @@
   font-weight: 700;
   line-height: 24px;
   width: 196px;
+}
+
+.icon-button.special-icon i.material-icons {
+  color: #ffffff; 
+}
+
+.icon-button:not(.special-icon) .icon-text {
+  color: #6E6B7B; 
+}
+
+.expanded .icon-button.special-icon .icon-text {
+  color: #ffffff;
+}
+
+.circle-icon {
+  font-size: 8px; 
+  margin-left: 30px;
+  vertical-align: middle;
 }

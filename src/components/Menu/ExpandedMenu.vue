@@ -17,7 +17,7 @@
           <div class="button-content">
             <div class="icon-text-container">
               <i class="material-icons" v-if="iconName !== 'more' || !isExpanded">{{ iconData.iconClass }}</i>
-              <span v-if="isExpanded" class="icon-text" style="font-weight: 700; color: #babfc7">
+              <span v-if="isExpanded" class="icon-text" style="font-weight: 700; ">
                 {{ iconData.text }}
                 <i v-if="isExpanded && ['analytics', 'school'].includes(iconName)" class="material-icons icon-expand">
                   {{ expandedLists[iconName] ? 'expand_less' : 'expand_more' }}
@@ -31,6 +31,7 @@
 
       <ul v-show="isExpanded && expandedLists[iconName]" class="dropdown-list">
         <li v-for="item in iconData.dropdownItems" :key="item">
+          <i class="material-icons circle-icon">lens</i>
           <span>{{ item }}</span>
         </li>
       </ul>

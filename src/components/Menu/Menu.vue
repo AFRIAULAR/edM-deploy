@@ -1,5 +1,5 @@
 <template>
-  <div class="container-menu col-1" :style="{ backgroundColor: bgColor, width: menuWidth + 'px' }">
+  <div class="container-menu col-1" :style="{ width: menuWidth }">
     <DropdownMenu
       :is-menu-expanded="isMenuExpanded"
       :menu-width="menuWidth"
@@ -22,9 +22,7 @@ export default {
     ExpandedMenu,
     
   },
-  props: {
-    bgColor: String,
-  },
+
   data() {
     return {
       menuWidth: 65,
