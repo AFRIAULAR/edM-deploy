@@ -1,7 +1,7 @@
 <template>
   <div class="student-details bg-white rounded">
     <div class="d-flex flex-column gap-3">
-      <div class="d-flex align-items-center gap-3">
+      <div class="d-flex align-items-center gap-3 ">
         <img
           class="rounded-circle"
           style="width: 65px; height: 65px;"
@@ -9,14 +9,14 @@
           alt="Student Image"
         />
         <div class="d-flex flex-column">
-          <div class="fw-bold">{{ fullName }}</div>
+          <div class="fullname fw-bold">{{ fullName }}</div>
           <div class="reg-copy">Reg. ID: {{ studentID }}
             <i class="material-icons toCopy" @click="copyDetails" title="Copy">{{ iconManager.copy }}</i>
           </div>
         </div>
       </div>
+      <span class="status">Status: Active</span>
       <div>
-        <div>Status: Active</div>
         <div class="d-flex justify-content-between">
           <template v-for="(icon, iconName) in iconManager">
             <i

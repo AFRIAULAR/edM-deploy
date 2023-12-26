@@ -23,9 +23,8 @@
 }
 
 @media (max-width: 768px) {
-  .menu {
+  .menu, .scrollbar-container {
     display: none; 
   }
-
 }
 

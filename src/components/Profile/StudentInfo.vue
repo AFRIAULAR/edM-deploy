@@ -13,7 +13,7 @@
       </div>
     </div>
     <div v-if="isExpanded" class="mt-3">
-      <div v-for="(info, label) in studentProfile.studentProfile.studentinfo" :key="label" class="d-flex justify-content-between">
+      <div v-for="(info, label) in studentProfile.studentProfile.studentinfo" :key="label" class="student-info-text d-flex justify-content-between">
         <div class="fw-bold text-muted">{{ label }}:</div>
         <div class="text-muted">{{ info }}</div>
       </div>

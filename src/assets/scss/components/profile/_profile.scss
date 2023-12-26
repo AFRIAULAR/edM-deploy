@@ -52,6 +52,7 @@
 
   .about-content {
     transition: height 0.3s ease; 
+  
   }
 }
 
@@ -92,6 +93,7 @@
 
 .info-item {
   margin-bottom: 10px;
+  text-align: left;
 }
 
 //STUDENT INFO
@@ -99,3 +101,8 @@
     font-size: 12px;
     line-height: 17px;
   }
+
+  .student-info-text{
+    text-align: right;
+  }
+ 

@@ -1,4 +1,5 @@
 <template>
+  <div class="icon-wrap-container">
     <div class="icon-wrapper bg-white mt-0" :class="{ expanded: isExpanded }" :style="{ width: menuWidth + 'px' }">
     <div v-for="(iconData, iconName, index) in iconManager" :key="iconName">
       <div class="icon-button-container">
@@ -36,6 +37,7 @@
         </li>
       </ul>
     </div>
+  </div>
   </div>
   
 </template>
