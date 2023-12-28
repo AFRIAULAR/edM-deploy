@@ -16,6 +16,7 @@
                   backgroundColor: info.icon === 'circle' ? 'transparent' : '#7367F0',
                   marginRight: info.icon === 'circle' ? '10px' : '0'}">
             <span class="icon-text" :style="{ color: info.icon === 'circle' ? '#7367F0' : 'white' }">{{ info.icon }}</span>
+            <div class="timeline-line"></div> 
           </div>
         </div>
         <div class="info-block">
@@ -33,7 +34,7 @@
             </div>
           </div>
         </div>
-        <div class="timeline-line"></div> 
+        
       </div>
     </div>
   </div>

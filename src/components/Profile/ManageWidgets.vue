@@ -2,7 +2,7 @@
   <div class="manage-widgets p-3 rounded mt-2" style="background-color: #ffffff;">
     <div class="d-flex flex-column gap-3">
       <div class="d-flex flex-column">
-        <div class="text-primary fw-bold" style="font-size: 12px;">Manage Widgets</div>
+        <div class="text-primary-manage fw-bold" style="font-size: 12px; color:#4436FD">Manage Widgets</div>
       </div>
     </div>
   </div>
