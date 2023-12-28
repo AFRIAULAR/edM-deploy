@@ -1,0 +1,38 @@
+{
+  "studentProfile": {
+    "aboutinfo": {
+      "First Name": "Africa",
+      "Last Name": "Munchen Schollengberg",
+      "Email": "danielle_munchen@gmail.com",
+      "Phone Number": "+52 5522126164",
+      "Country": "México",
+      "Category": "Do Not Contact"
+    },
+    "studentinfo": {
+      "Period": "2023 - 1",
+      "Status": "Regular Student",
+      "School": "Aldebaran",
+      "Admission Module": "Pre-Center",
+      "Segment": "Undefined",
+      "Segment Detail": "Undefined",
+      "Mathematics": "Undefined Risk (Note: No Information)",
+      "Chemistry": "Undefined Risk (Note: No Information)",
+      "Programming": "Undefined Risk (Note: No Information)",
+      "Communication": "Undefined Risk (Note: No Information)"
+    },
+    "careerdetails": {
+      "careers": [
+        {
+          "id": 1,
+          "name": "Software Engineering",
+          "careerID": "0398P",
+          "type": "Graduate",
+          "modality": "On-Campus",
+          "status": "Enrollment",
+          "studentID": "AYSI0123839",
+          "cohort": "A1 2023"
+        }
+      ]
+    }
+  }
+}

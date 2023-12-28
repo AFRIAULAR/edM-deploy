@@ -1,0 +1,98 @@
+.special-icon {
+  background: #4436FD;
+  color: #ffffff;
+}
+
+
+.icon-button-container {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-expand {
+  font-size: 24px;
+  margin-left: 30px;
+  padding: 0;
+}
+
+.expanded .icon-expand {
+  visibility: visible;
+}
+
+.icon-wrapper {
+  width: 65px;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.expanded {
+  width: 250px;
+  margin-top: 0;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  box-shadow: 4px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  
+}
+
+.icon-button {
+  display: flex;
+  font-family: "Material Icons";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 21px;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  margin: 10px 5px;
+  transition: width 0.3s ease, padding 0.3s ease;
+  z-index: 999;
+  align-items: center;
+  max-width: 230px;
+
+}
+
+.button-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.icon-text-container {
+  display: flex;
+  align-items: center;
+  text-align: start;
+}
+
+.icon-text {
+  margin-left: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  width: 196px;
+}
+
+.icon-button.special-icon i.material-icons {
+  color: #ffffff; 
+}
+
+.icon-button:not(.special-icon) .icon-text {
+  color: #6E6B7B; 
+}
+
+.expanded .icon-button.special-icon .icon-text {
+  color: #ffffff;
+}
+
+.circle-icon {
+  font-size: 8px; 
+  margin-left: 30px;
+  vertical-align: middle;
+}

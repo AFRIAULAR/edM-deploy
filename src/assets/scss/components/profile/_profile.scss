@@ -1,0 +1,112 @@
+//GENERAL
+
+.career-details,  .manage-widgets, .student-info{
+  width: 330px;
+}
+@media (max-width: 768px) {
+  .career-details,  .manage-widgets, .student-info, .student-details{
+    width: 100%; 
+    max-width: 500px; 
+    margin: 0 auto; 
+  }
+
+  .career-details,  .student-info[data-iscollapsed="true"] {
+    height: 330px; 
+    overflow-y: hidden; 
+  }
+}
+
+@media (max-width: 576px) {
+  .career-details,  .manage-widgets, .student-details {
+    width: 100%; 
+    max-width: 300px; 
+    margin: 0 auto; 
+  }
+
+  .career-details, .student-info[data-iscollapsed="true"] {
+    height: 280px; 
+    overflow-y: hidden; 
+  }
+}
+
+//CAREER DETAILS
+.career-details {
+  height: 45px;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+//ABOUT
+.about-container {
+  width: 330px;
+  overflow: hidden;
+
+  &.collapsed {
+    height: 45px;
+  }
+
+  .about-content {
+    transition: height 0.3s ease; 
+  
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .about-container.collapsed {
+    height: 330px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .about-container {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .about-container.collapsed {
+    height: 280px; 
+  }
+}
+
+.rotate-up {
+  transform: rotate(180deg); 
+}
+.rotate-down {
+  transform: rotate(0deg);
+}
+
+.title-text {
+  font-size: 1.2em; 
+}
+
+.info-item {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+//STUDENT INFO
+  .student-info {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .student-info-text{
+    text-align: left;
+  }
+ 
+  //MANAGE WIDGETS
+  .text-primary{
+    color: #4436FD;
+  }
