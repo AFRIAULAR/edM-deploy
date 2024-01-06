@@ -33,7 +33,7 @@ export default {
     return {
       $primaryColor: '#4436FD',
       isSmallScreen: false,
-      isLargeScreen: true // Mostrar la imagen en pantallas grandes por defecto
+      isLargeScreen: true 
     };
   },
   methods: {
@@ -43,7 +43,7 @@ export default {
     },
     checkScreenSize() {
       this.isSmallScreen = window.innerWidth <= 768;
-      this.isLargeScreen = window.innerWidth > 768; // Actualizar el estado de la pantalla grande
+      this.isLargeScreen = window.innerWidth > 768;
     }
   },
   mounted() {
@@ -57,7 +57,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/scss/components/_navBar';
 @import '../assets/scss/base/_variables';
 @import '../assets/scss/base/_responsive'; 
 </style>
