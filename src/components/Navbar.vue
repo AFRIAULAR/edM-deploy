@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/scss/components/_navbar';
+@import '../assets/scss/components/_navBar';
 @import '../assets/scss/base/_variables';
 @import '../assets/scss/base/_responsive'; 
 </style>
